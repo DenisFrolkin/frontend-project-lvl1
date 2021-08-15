@@ -2,6 +2,9 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "type": "module",
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
   "description": "[![Actions Status](https://github.com/DenisFrolkin/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/DenisFrolkin/frontend-project-lvl1/actions)",
   "main": "index.js",
   "scripts": {
@@ -18,6 +21,7 @@
   },
   "homepage": "https://github.com/DenisFrolkin/frontend-project-lvl1#readme",
   "dependencies": {
+    "link": "^0.1.5",
     "make": "^0.0.0"
   }
 }
