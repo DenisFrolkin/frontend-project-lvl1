@@ -4,6 +4,4 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - name: run linter
-        run: |
-          make lint
+      - run: make lint
