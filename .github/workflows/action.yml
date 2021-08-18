@@ -1,4 +1,4 @@
-name: actionfile
+name: Actions-check
 
 on:
   push:
