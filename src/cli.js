@@ -7,3 +7,4 @@ const helloGetUserName = () => {
 };
 
 export default helloGetUserName;
+export const name = readlineSync.question('May I have your name? ');
