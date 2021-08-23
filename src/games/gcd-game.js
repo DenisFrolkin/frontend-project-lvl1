@@ -7,8 +7,6 @@ const gameBody = () => {
   const num1 = randomElement(1, 101);
   const num2 = randomElement(1, 101);
   const currentGameQuestion = () => `${num1} ${num2}`;
-  
-
   const currentGameCorrectAnswer = () => {
     if (num1 % num2 === 0) {
       return num2;
