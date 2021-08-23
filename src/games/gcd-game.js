@@ -11,14 +11,15 @@ const gameBody = () => {
     if (num1 % num2 === 0) {
       return num2;
     }
-    if (num2 % num1 === 0 ) {
+    if (num2 % num1 === 0) {
       return num1;
-    };
-    for (let i = Math.floor(num1 / 2); i > 0; ) {
-      if (num1 % i === 0 && num2 % i === 0) {
-        return i;
-      } i -= 1;
     }
+    let res = 0;
+    for (let i = Math.floor(num1 / 2); i > 0;) {
+      if (num1 % i === 0 && num2 % i === 0) {
+        res = i;
+      } i -= 1;
+    } return res;
   };
   return [currentGameQuestion(), currentGameCorrectAnswer()];
 };
