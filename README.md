@@ -6,3 +6,5 @@
 [![Actions Status](https://github.com/DenisFrolkin/frontend-project-lvl1/actions/workflows/action.yml/badge.svg)](https://github.com/DenisFrolkin/frontend-project-lvl1/actions)
 
 [![asciicast](https://asciinema.org/a/WIDL0AEiBpsEeBmE9saz7t8d3.svg)](https://asciinema.org/a/WIDL0AEiBpsEeBmE9saz7t8d3)
+
+[![asciicast](https://asciinema.org/a/LSg0EcPgNLIyv6C2NaAxxL1CA.svg)](https://asciinema.org/a/LSg0EcPgNLIyv6C2NaAxxL1CA)
