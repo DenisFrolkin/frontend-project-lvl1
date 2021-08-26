@@ -20,7 +20,7 @@ const gameBody = () => {
 
   const currentGameCorrectAnswer = () => (res[x + 1] - step);
 
-  return [currentGameQuestion, currentGameCorrectAnswer];
+  return [currentGameQuestion(), currentGameCorrectAnswer()];
 };
 
 const findProgressionElement = () => {
