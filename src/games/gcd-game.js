@@ -17,7 +17,8 @@ const gameBody = () => {
     let res = 0;
     for (let i = Math.floor(num1 / 2); i > 0;) {
       if (num1 % i === 0 && num2 % i === 0) {
-        return res = i;
+        res = i;
+        return res;
       } i -= 1;
     } return res;
   };
