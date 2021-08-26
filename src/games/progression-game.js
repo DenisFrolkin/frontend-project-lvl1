@@ -16,7 +16,7 @@ const gameBody = () => {
       res.push(i);
     }
     res[x] = '..';
-    return res;
+    return res.join(' ');
   };
 
   const currentGameCorrectAnswer = () => (res[x + 1] - step);
