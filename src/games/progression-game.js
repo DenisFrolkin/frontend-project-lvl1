@@ -12,7 +12,7 @@ const gameBody = () => {
   const currentGameQuestion = () => {
     let i = startNum;
     let j = 1;
-    for (; j <= length; i += step; j += 1) {
+    for (; j <= length; i += step, j += 1) {
       res.push(i);
     }
     res[x] = '..';
