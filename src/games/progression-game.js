@@ -11,7 +11,8 @@ const gameBody = () => {
   const res = [];
   const currentGameQuestion = () => {
     let i = startNum;
-    for (; i <= length; i += step) {
+    let j = 1;
+    for (; j <= length; i += step; j += 1) {
       res.push(i);
     }
     res[x] = '..';
