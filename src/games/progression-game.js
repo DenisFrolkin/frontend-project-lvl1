@@ -7,7 +7,7 @@ const gameBody = () => {
   const startNum = randomElement(-100, 101);
   const step = randomElement(-5, 6);
   const length = randomElement(5, 11);
-  const x = randomElement(1, length);
+  const x = randomElement(1, length - 1);
   const res = [];
   const currentGameQuestion = () => {
     let i = startNum;
