@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/DenisFrolkin/frontend-project-lvl1#readme",
   "dependencies": {
+    "frontend-project-lvl1": "^1.4.0",
     "link": "^0.1.5",
     "make": "^0.0.0",
     "readline-sync": "^1.4.10"
