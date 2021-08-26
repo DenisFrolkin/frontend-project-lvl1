@@ -12,10 +12,10 @@ const gameBody = () => {
 
   const currentGameCorrectAnswer = () => {
     if (char === '+') {
-      return (num1 + num2);
+      return String(num1 + num2);
     } if (char === '-') {
-      return (num1 - num2);
-    } return (num1 * num2);
+      return String(num1 - num2);
+    } return String(num1 * num2);
   };
   return [currentGameQuestion(), currentGameCorrectAnswer()];
 };

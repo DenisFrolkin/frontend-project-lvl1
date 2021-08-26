@@ -19,7 +19,7 @@ const gameBody = () => {
     return res.join(' ');
   };
 
-  const currentGameCorrectAnswer = () => (res[x + 1] - step);
+  const currentGameCorrectAnswer = () => String(res[x + 1] - step);
 
   return [currentGameQuestion(), currentGameCorrectAnswer()];
 };

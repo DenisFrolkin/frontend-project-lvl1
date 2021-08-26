@@ -9,18 +9,18 @@ const gameBody = () => {
   const currentGameQuestion = () => `${num1} ${num2}`;
   const currentGameCorrectAnswer = () => {
     if (num1 % num2 === 0) {
-      return num2;
+      return String(num2);
     }
     if (num2 % num1 === 0) {
-      return num1;
+      return String(num1);
     }
     let res = 0;
     for (let i = Math.floor(num1 / 2); i > 0;) {
       if (num1 % i === 0 && num2 % i === 0) {
         res = i;
-        return res;
+        return String(res);
       } i -= 1;
-    } return res;
+    } return String(res);
   };
   return [currentGameQuestion(), currentGameCorrectAnswer()];
 };
