@@ -34,16 +34,21 @@
 ### С процессом прохождения игр можно ознакомиться в аскинемах:
 
 * brain-even
+
 [![asciicast](https://asciinema.org/a/WIDL0AEiBpsEeBmE9saz7t8d3.svg)](https://asciinema.org/a/WIDL0AEiBpsEeBmE9saz7t8d3)
 
 * brain-calc
+
 [![asciicast](https://asciinema.org/a/LSg0EcPgNLIyv6C2NaAxxL1CA.svg)](https://asciinema.org/a/LSg0EcPgNLIyv6C2NaAxxL1CA)
 
 * brain-gcd
+
 [![asciicast](https://asciinema.org/a/vcAfVk9wo3zXVErX0K8PRGGKS.svg)](https://asciinema.org/a/vcAfVk9wo3zXVErX0K8PRGGKS)
 
 * brain-progression
+
 [![asciicast](https://asciinema.org/a/72wEIJ7cE6JwWuJElIkU996N4.svg)](https://asciinema.org/a/72wEIJ7cE6JwWuJElIkU996N4)
 
 * brain-prime
+
 [![asciicast](https://asciinema.org/a/9ZO1HXKSC99vbxEHF8mY3wXDw.svg)](https://asciinema.org/a/9ZO1HXKSC99vbxEHF8mY3wXDw)
