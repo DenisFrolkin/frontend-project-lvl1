@@ -31,6 +31,7 @@
 
 [![Actions Status](https://github.com/DenisFrolkin/frontend-project-lvl1/actions/workflows/action.yml/badge.svg)](https://github.com/DenisFrolkin/frontend-project-lvl1/actions)
 
+
 ### С процессом прохождения игр можно ознакомиться в аскинемах:
 
 * brain-even
