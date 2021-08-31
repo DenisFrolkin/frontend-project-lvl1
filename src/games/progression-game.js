@@ -7,19 +7,19 @@ const gameBody = () => {
   const startNum = randomElement(-100, 101);
   const step = randomElement(-5, 6);
   const length = randomElement(5, 11);
-  const x = randomElement(1, length - 1);
-  const res = [];
+  const gap = randomElement(1, length - 1);
+  const progression = [];
   const currentGameQuestion = () => {
     let i = startNum;
     let j = 1;
     for (; j <= length; i += step, j += 1) {
-      res.push(i);
+      progression.push(i);
     }
-    res[x] = '..';
-    return res.join(' ');
+    progression[gap] = '..';
+    return progression.join(' ');
   };
 
-  const currentGameCorrectAnswer = () => String(res[x + 1] - step);
+  const currentGameCorrectAnswer = () => String(progression[gap + 1] - step);
 
   return [currentGameQuestion(), currentGameCorrectAnswer()];
 };

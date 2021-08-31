@@ -5,7 +5,7 @@ const currentGameIntro = 'What is the result of the expression?';
 
 const gameBody = () => {
   const arrOfChar = ['+', '-', '*'];
-  const char = arrOfChar[randomElement(0, 3)];
+  const char = arrOfChar[randomElement(0, arrOfChar.length)];
   const num1 = randomElement(0, 20);
   const num2 = randomElement(0, 20);
   const currentGameQuestion = () => `${num1} ${char} ${num2}`;
