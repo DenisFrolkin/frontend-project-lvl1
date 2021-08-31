@@ -16,7 +16,7 @@ const gameEngine = (currentGameIntro, gameBody) => {
       console.log('Correct!');
     } else {
       console.log(`'${answer}' is wrong answer ;(. correct answer was '${correctAnswer}'.`);
-      console.log(`Let's try again, ${name}!`);
+      return console.log(`Let's try again, ${name}!`);
     }
   } return console.log(`Congratulations, ${name}!`);
 };
