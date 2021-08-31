@@ -7,11 +7,9 @@ const gameEngine = (currentGameIntro, gameBody) => {
   console.log(currentGameIntro);
   const roundCount = 3;
   for (let i = 1; i <= roundCount; i += 1) {
-    const [currentGameQuestion, currentGameCorrectAnswer] = gameBody();
-    const question = currentGameQuestion;
+    const [question, correctAnswer] = gameBody();
     console.log(`Question: ${question}`);
     const answer = readlineSync.question('Your answer: ');
-    const correctAnswer = currentGameCorrectAnswer;
     if (correctAnswer === answer) {
       console.log('Correct!');
     } else {
