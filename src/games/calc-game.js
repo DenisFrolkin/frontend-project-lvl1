@@ -20,8 +20,8 @@ const gameBody = () => {
   return [currentGameQuestion(), currentGameCorrectAnswer()];
 };
 
-const isResult = () => {
+const runGame = () => {
   gameEngine(currentGameIntro, gameBody);
 };
 
-export default isResult;
+export default runGame;

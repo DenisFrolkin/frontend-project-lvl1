@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import findProgressionElement from '../src/games/progression-game.js';
+import runGame from '../src/games/progression-game.js';
 
-findProgressionElement();
+runGame();

@@ -11,8 +11,8 @@ const gameBody = () => {
   return [currentGameQuestion, currentGameCorrectAnswer];
 };
 
-const isEven = () => {
+const runGame = () => {
   gameEngine(currentGameIntro, gameBody);
 };
 
-export default isEven;
+export default runGame;

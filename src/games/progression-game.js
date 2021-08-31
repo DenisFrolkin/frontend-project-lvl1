@@ -24,8 +24,8 @@ const gameBody = () => {
   return [currentGameQuestion(), currentGameCorrectAnswer()];
 };
 
-const findProgressionElement = () => {
+const runGame = () => {
   gameEngine(currentGameIntro, gameBody);
 };
 
-export default findProgressionElement;
+export default runGame;

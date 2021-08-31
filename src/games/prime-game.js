@@ -19,8 +19,8 @@ const gameBody = () => {
   }; return [currentGameQuestion, currentGameCorrectAnswer()];
 };
 
-const isPrime = () => {
+const runGame = () => {
   gameEngine(currentGameIntro, gameBody);
 };
 
-export default isPrime;
+export default runGame;

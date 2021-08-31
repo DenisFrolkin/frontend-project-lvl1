@@ -25,8 +25,8 @@ const gameBody = () => {
   return [currentGameQuestion(), currentGameCorrectAnswer()];
 };
 
-const findGcd = () => {
+const runGame = () => {
   gameEngine(currentGameIntro, gameBody);
 };
 
-export default findGcd;
+export default runGame;
