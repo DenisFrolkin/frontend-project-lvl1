@@ -1,18 +1,20 @@
 import gameEngine from '../index.js';
 import randomElement from '../randomElement.js';
 
-const currentGameIntro = 'Answer "yes" if the number is even, otherwise answer "no".';
+const gameRule = 'Answer "yes" if the number is even, otherwise answer "no".';
+
+const calculate = (number) => number % 2 === 0;
 
 const gameBody = () => {
-  const currentGameQuestion = randomElement(1, 1000000);
+  const question = randomElement(1, 1000000);
 
-  const currentGameCorrectAnswer = currentGameQuestion % 2 === 0 ? 'yes' : 'no';
+  const correctAnswer = calculate(question) ? 'yes' : 'no';
 
-  return [currentGameQuestion, currentGameCorrectAnswer];
+  return [question, correctAnswer];
 };
 
 const runGame = () => {
-  gameEngine(currentGameIntro, gameBody);
+  gameEngine(gameRule, gameBody);
 };
 
 export default runGame;

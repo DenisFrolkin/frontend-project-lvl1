@@ -1,26 +1,29 @@
 import gameEngine from '../index.js';
 import randomElement from '../randomElement.js';
 
-const currentGameIntro = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const gameRule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+
+const calculate = (number) => {
+  if (number === 1) {
+    return 'no';
+  }
+  for (let i = 2; i < (Math.sqrt(number)); i += 1) {
+    if (number % i === 0) {
+      return 'no';
+    }
+  } return 'yes';
+};
 
 const gameBody = () => {
   const number = randomElement(1, 200);
-  const currentGameQuestion = number;
+  const question = number;
 
-  const currentGameCorrectAnswer = () => {
-    if (number === 1) {
-      return 'no';
-    }
-    for (let i = 2; i < (number / 2); i += 1) {
-      if (number % i === 0) {
-        return 'no';
-      }
-    } return 'yes';
-  }; return [currentGameQuestion, currentGameCorrectAnswer()];
+  const correctAnswer = calculate(question);
+  return [question, correctAnswer];
 };
 
 const runGame = () => {
-  gameEngine(currentGameIntro, gameBody);
+  gameEngine(gameRule, gameBody);
 };
 
 export default runGame;
