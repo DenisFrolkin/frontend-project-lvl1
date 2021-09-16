@@ -4,10 +4,23 @@ import randomElement from '../randomElement.js';
 const gameRule = 'What is the result of the expression?';
 
 const calculate = (x, y, symbol) => {
-  const result = String(`${x} ${symbol} ${y}`);
+  let result = '';
+  switch (symbol) {
+    case '+':
+      result = String(x + y);
+      break;
+    case '-':
+      result = String(x - y);
+      break;
+    case '*':
+      result = String(x * y);
+      break;
+    default:
+      result = null;
+      break;
+  }
   return result;
 };
-console.log(calculate(1, 3, '+'));
 
 const gameBody = () => {
   const arrOfChar = ['+', '-', '*'];
@@ -25,3 +38,4 @@ const runGame = () => {
 };
 
 export default runGame;
+
