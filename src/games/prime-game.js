@@ -7,7 +7,7 @@ const calculate = (number) => {
   if (number === 1) {
     return 'no';
   }
-  for (let i = 2; i < (Math.sqrt(number)); i += 1) {
+  for (let i = 2; i <= (Math.sqrt(number)); i += 1) {
     if (number % i === 0) {
       return 'no';
     }
