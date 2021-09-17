@@ -38,4 +38,3 @@ const runGame = () => {
 };
 
 export default runGame;
-
