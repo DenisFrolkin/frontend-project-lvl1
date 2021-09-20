@@ -27,9 +27,9 @@ const getGameData = () => {
   const operator = operators[randomElement(0, operators.length)];
   const num1 = randomElement(0, 20);
   const num2 = randomElement(0, 20);
-  const question = `${num1} ${char} ${num2}`;
+  const question = `${num1} ${operator} ${num2}`;
 
-  const correctAnswer = calculate(num1, num2, char);
+  const correctAnswer = calculate(num1, num2, operator);
   return [question, correctAnswer];
 };
 
