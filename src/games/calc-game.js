@@ -24,7 +24,7 @@ const calculate = (x, y, symbol) => {
 
 const getGameData = () => {
   const operators = ['+', '-', '*'];
-  const char = operators[randomElement(0, operators.length)];
+  const operator = operators[randomElement(0, operators.length)];
   const num1 = randomElement(0, 20);
   const num2 = randomElement(0, 20);
   const question = `${num1} ${char} ${num2}`;
