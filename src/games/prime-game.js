@@ -11,7 +11,8 @@ const calculate = (number) => {
     if (number % i === 0) {
       return 'no';
     }
-  } return 'yes';
+  }
+  return 'yes';
 };
 
 const getGameData = () => {
