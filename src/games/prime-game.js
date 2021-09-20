@@ -14,7 +14,7 @@ const calculate = (number) => {
   } return 'yes';
 };
 
-const gameBody = () => {
+const getGameData = () => {
   const number = randomElement(1, 200);
   const question = number;
 
@@ -23,7 +23,7 @@ const gameBody = () => {
 };
 
 const runGame = () => {
-  gameEngine(gameRule, gameBody);
+  gameEngine(gameRule, getGameData);
 };
 
 export default runGame;

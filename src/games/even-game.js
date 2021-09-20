@@ -5,7 +5,7 @@ const gameRule = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const calculate = (number) => number % 2 === 0;
 
-const gameBody = () => {
+const getGameData = () => {
   const question = randomElement(1, 1000000);
 
   const correctAnswer = calculate(question) ? 'yes' : 'no';
@@ -14,7 +14,7 @@ const gameBody = () => {
 };
 
 const runGame = () => {
-  gameEngine(gameRule, gameBody);
+  gameEngine(gameRule, getGameData);
 };
 
 export default runGame;

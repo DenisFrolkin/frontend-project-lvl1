@@ -21,7 +21,7 @@ const calculate = (startNum, step, length, gap) => {
   return (progression[gap + 1] - step);
 };
 
-const gameBody = () => {
+const getGameData = () => {
   const startNum = randomElement(-100, 101);
   const step = randomElement(-5, 6);
   const length = randomElement(5, 11);
@@ -34,7 +34,7 @@ const gameBody = () => {
 };
 
 const runGame = () => {
-  gameEngine(gameRule, gameBody);
+  gameEngine(gameRule, getGameData);
 };
 
 export default runGame;

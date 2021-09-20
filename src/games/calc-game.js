@@ -22,9 +22,9 @@ const calculate = (x, y, symbol) => {
   return result;
 };
 
-const gameBody = () => {
-  const arrOfChar = ['+', '-', '*'];
-  const char = arrOfChar[randomElement(0, arrOfChar.length)];
+const getGameData = () => {
+  const operators = ['+', '-', '*'];
+  const char = operators[randomElement(0, operators.length)];
   const num1 = randomElement(0, 20);
   const num2 = randomElement(0, 20);
   const question = `${num1} ${char} ${num2}`;
@@ -34,7 +34,7 @@ const gameBody = () => {
 };
 
 const runGame = () => {
-  gameEngine(gameRule, gameBody);
+  gameEngine(gameRule, getGameData);
 };
 
 export default runGame;

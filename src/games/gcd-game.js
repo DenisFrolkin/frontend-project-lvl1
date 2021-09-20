@@ -9,7 +9,7 @@ const calculate = (x, y) => {
   } return x;
 };
 
-const gameBody = () => {
+const getGameData = () => {
   const num1 = randomElement(1, 101);
   const num2 = randomElement(1, 101);
   const question = `${num1} ${num2}`;
@@ -18,7 +18,7 @@ const gameBody = () => {
 };
 
 const runGame = () => {
-  gameEngine(gameRule, gameBody);
+  gameEngine(gameRule, getGameData);
 };
 
 export default runGame;
