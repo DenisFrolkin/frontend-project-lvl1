@@ -7,13 +7,13 @@ const calculate = (x, y, symbol) => {
   let result = '';
   switch (symbol) {
     case '+':
-      result = (x + y);
+      result = x + y;
       break;
     case '-':
-      result = (x - y);
+      result = x - y;
       break;
     case '*':
-      result = (x * y);
+      result = x * y;
       break;
     default:
       result = null;
@@ -29,7 +29,7 @@ const getGameData = () => {
   const num2 = randomElement(0, 20);
   const question = `${num1} ${operator} ${num2}`;
 
-  const correctAnswer = String(calculate(num1, num2, operator));
+  const correctAnswer = calculate(num1, num2, operator);
   return [question, correctAnswer];
 };
 
