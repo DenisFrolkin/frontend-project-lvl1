@@ -24,11 +24,9 @@ const getGameData = () => {
   const length = randomElement(5, 11);
   const gap = randomElement(1, length - 1);
   const progression = makeProgression(startNum, step, length);
+  const correctAnswer = String(progression[gap]));
   progression[gap] = '..';
   const question = progression.join(' ');
-
-  const correctAnswer = String(calculate(startNum, step, length, gap));
-
   return [question, correctAnswer];
 };
 
