@@ -3,7 +3,7 @@ import randomElement from '../randomElement.js';
 
 const gameRule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const calculate = (number) => {
+const isPrime = (number) => {
   if (number <= 1) {
     return false;
   }
@@ -19,7 +19,7 @@ const getGameData = () => {
   const number = randomElement(1, 200);
   const question = number;
 
-  const correctAnswer = calculate(question) ? 'yes' : 'no';
+  const correctAnswer = isPrime(question) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
 
