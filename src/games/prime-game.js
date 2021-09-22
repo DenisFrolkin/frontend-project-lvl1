@@ -4,22 +4,22 @@ import randomElement from '../randomElement.js';
 const gameRule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const calculate = (number) => {
-  if (number === 1) {
-    return 'no';
+  if (number <= 1) {
+    return false;
   }
   for (let i = 2; i <= (Math.sqrt(number)); i += 1) {
     if (number % i === 0) {
-      return 'no';
+      return false;
     }
   }
-  return 'yes';
+  return true;
 };
 
 const getGameData = () => {
   const number = randomElement(1, 200);
   const question = number;
 
-  const correctAnswer = calculate(question);
+  const correctAnswer = calculate(question) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
 
