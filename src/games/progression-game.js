@@ -3,22 +3,19 @@ import randomElement from '../randomElement.js';
 
 const gameRule = 'What number is missing in the progression?';
 
-const makeProgression = (startNum, step, length, gap) => {
+const makeProgression = (startNum, step, length) => {
   const progression = [startNum];
   for (let i = 1; i <= length; i += 1) {
     progression.push(startNum + i * step);
   }
-  progression[gap] = '..';
-  return progression.join(' ');
+  return progression;
 };
 const calculate = (startNum, step, length, gap) => {
   const progression = [startNum];
   for (let i = 1; i <= length; i += 1) {
     progression.push(startNum + i * step);
   }
-  progression[gap] = '..';
-  progression.join(' ');
-  return (progression[gap + 1] - step);
+  return progression[gap];
 };
 
 const getGameData = () => {
@@ -26,7 +23,9 @@ const getGameData = () => {
   const step = randomElement(-5, 6);
   const length = randomElement(5, 11);
   const gap = randomElement(1, length - 1);
-  const question = makeProgression(startNum, step, length, gap);
+  const progression = makeProgression(startNum, step, length);
+  progression[gap] = '..';
+  const question = progression.join(' ');
 
   const correctAnswer = String(calculate(startNum, step, length, gap));
 
