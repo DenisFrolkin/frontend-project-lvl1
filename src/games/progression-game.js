@@ -10,13 +10,6 @@ const makeProgression = (startNum, step, length) => {
   }
   return progression;
 };
-const calculate = (startNum, step, length, gap) => {
-  const progression = [startNum];
-  for (let i = 1; i <= length; i += 1) {
-    progression.push(startNum + i * step);
-  }
-  return progression[gap];
-};
 
 const getGameData = () => {
   const startNum = randomElement(-100, 101);
